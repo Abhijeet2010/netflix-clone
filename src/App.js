@@ -1,21 +1,20 @@
-// import React from 'react';
-import "./App.css"
-import HomeScreen from './Screens/HomeScreen';
 import React from "react";
+import "./App.css";
+import HomeScreen from "./Screens/HomeScreen";
+
 import { Routes, Route } from "react-router-dom";
 import LoginScreen from "./Screens/LoginScreen";
+import SinglePage from "./Screens/SinglePage";
+import RegisterScreen from "./Screens/RegisterScreen";
 
 function App() {
-  const user = null;
-
   return (
     <div className="app">
       <Routes>
-      {!user ? (
-        <Route path="/" element={<LoginScreen />} />
-      ):(
-        <Route exact path="/" element={<HomeScreen />} />
-      )}
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/register" element={<RegisterScreen />} />
+        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/singlepage/:id" element={<SinglePage />} />
       </Routes>
     </div>
   );

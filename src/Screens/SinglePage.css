@@ -1,0 +1,42 @@
+.singlePage {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 0 5rem;
+}
+
+.singlePage > .singlePage__right > h2 {
+  font-size: 2rem;
+}
+
+.singlePage__left > img {
+  height: 20rem;
+  width: 40vw;
+}
+.singlePage__right {
+  /* text-align: center; */
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+.singlePage__left {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 1rem;
+}
+
+.singlePage__right > button {
+  border-radius: 50%;
+}
+
+PlayCircleFilledWhiteIcon {
+  background-color: blue !important;
+}
