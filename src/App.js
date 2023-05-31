@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import HomeScreen from "./Screens/HomeScreen";
-
 import { Routes, Route } from "react-router-dom";
 import LoginScreen from "./Screens/LoginScreen";
 import SinglePage from "./Screens/SinglePage";

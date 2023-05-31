@@ -19,6 +19,7 @@ const SignupScreen = () => {
       body: JSON.stringify({ username, email, password }),
       credentials: "include",
     });
+
     const data = res.json();
     console.log(data);
     if (res.status === 200) {
@@ -30,33 +31,50 @@ const SignupScreen = () => {
     }
   };
   return (
-    <div className="registerScreen">
-      <form>
-        <h1>Register Account</h1>
-        <input
-          type="text"
-          placeholder="Enter Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit" onClick={signIn}>
-          Register
-        </button>
-      </form>
-    </div>
+    <>
+      <img
+        style={{
+          width: "100vw",
+          height: "100%",
+          position: "relative",
+        }}
+        src="https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg"
+        alt=""
+      />
+      <div className="registerScreen">
+        <form>
+          <h1 style={{ color: "white", textShadow: "1px 4px 5px black" }}>
+            Register Account
+          </h1>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button
+            type="submit"
+            onClick={signIn}
+            style={{ textShadow: "1px 5px 5px black" }}
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 
